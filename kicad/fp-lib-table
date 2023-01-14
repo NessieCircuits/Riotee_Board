@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "riotee")(type "KiCad")(uri "${KIPRJMOD}/../library/riotee.pretty")(options "")(descr ""))
+)

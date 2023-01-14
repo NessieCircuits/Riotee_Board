@@ -1,0 +1,9 @@
+*.kicad_sch-bak
+*-backups/*
+*.kicad_prl
+*.bak
+*.csv
+*.xml
+\#auto_saved_files#
+_autosave-*.kicad_pcb
+gerber/
