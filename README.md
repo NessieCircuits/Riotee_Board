@@ -5,10 +5,11 @@ The Riotee board is a development board for battery-free wireless devices. The o
 Latest design files:
  - [Schematics](https://www.riotee.nessie-circuits.de/artifacts/board/latest/schematics.pdf)
  - [Layout](https://www.riotee.nessie-circuits.de/artifacts/board/latest/pcb.pdf)
+ - [3D rendering](https://www.riotee.nessie-circuits.de/artifacts/board/latest/3drendering.png)
 
 ## Specification
 
-![Rendering of Riotee board](rendering.png "Riotee board")
+![3D rendering](https://www.riotee.nessie-circuits.de/artifacts/board/latest/3drendering.png)
 
 Essentially, the Riotee board combines a [Riotee probe](https://github.com/NessieCircuits/Riotee_ProbeHardware) and a Riotee module on a single board. The board has two 0.1" pin sockets that expose all relevant signals from the battery-free device, including 10 GPIOs that can be flexibly used for I2C, SPI or for reading analog sensors. These headers are also used to connect riotee shields to build fully featured devices without having to design custom PCBs. The board comes with a push button, an LED and a connector for a solar panel.
 
