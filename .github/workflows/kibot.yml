@@ -1,0 +1,35 @@
+name: Kibot
+
+on:
+  push:
+
+jobs:
+  kibot:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: INTI-CMNB/KiBot@v2_k6
+      with:
+        config: kibot_config.yml
+        dir: kibot_outputs
+        schema: 'kicad/riotee-board.kicad_sch'
+        board: 'kicad/riotee-board.kicad_pcb'
+
+    - name: Force permissions (kibot messes them up)
+      run: sudo chown -R 1001:1001 kibot_outputs
+
+    - name: Upload artifacts to github
+      uses: actions/upload-artifact@v2
+      with:
+        name: output
+        path: kibot_outputs
+
+    - name: Upload artifacts to webserver
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: www.riotee.nessie-circuits.de
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: kibot_outputs/
+        server-dir: /htdocs/riotee/artifacts/board/latest/
+        protocol: ftps
