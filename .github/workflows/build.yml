@@ -1,10 +1,12 @@
-name: Kibot
+name: Kibot build and deploy artifacts
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
-  kibot:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -13,7 +15,7 @@ jobs:
 
     - uses: INTI-CMNB/KiBot@v2_k6
       with:
-        config: kibot_config.yml
+        config: kibot_build.yml
         dir: kibot_outputs
         schema: 'kicad/riotee-board.kicad_sch'
         board: 'kicad/riotee-board.kicad_pcb'
@@ -22,7 +24,7 @@ jobs:
       run: sudo chown -R 1001:1001 kibot_outputs
 
     - name: Upload artifacts to github
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: output
         path: kibot_outputs

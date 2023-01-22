@@ -1,9 +1,10 @@
-# ATTENTION! THIS ISN'T A FULLY FUNCTIONAL EXAMPLE.
-# You should take portions of this example and edit the options to make
-# them suitable for your use.
-# This file is useful to know all the available options.
 kibot:
   version: 1
+
+preflight:
+  check_zone_fills: true
+  run_erc: true
+  run_drc: false
 
 outputs:
   # PDF Schematic Print (Portable Document Format):
