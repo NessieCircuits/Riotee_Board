@@ -1,5 +1,7 @@
 # Riotee Board Hardware Design Files
 
+[![Kibot ERC/DRC](https://github.com/NessieCircuits/Riotee_Board/actions/workflows/test.yml/badge.svg)](https://github.com/NessieCircuits/Riotee_Board/actions/workflows/test.yml)
+
 The Riotee board is a development board for battery-free wireless devices. The on-board wireless microcontroller runs off energy harvested from, for example, a solar panel and uses only tiny capacitors as energy storage. For uploading new software, the board can be connected to a PC via USB. During sotware upload and debugging, the microcontroller is powered with a fixed supply voltage from USB. After programming, the board automatically switches over to untethered, battery-free operation.
 
 Latest design files:
