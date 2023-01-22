@@ -1,4 +1,4 @@
-41842996768362
+43526005472601
 riotee
 AMPH_12402012E212A
 USB TYPE C, RA RCPT PCB, SMT, https://www.amphenol-cs.com/usb2-0-12402012e212a.html
@@ -35,12 +35,19 @@ CNK_KMR2_SW
 5
 5
 riotee
-FlexyPin_1x09_P2.54mm
+FlexyPin_1x06_P2.54mm
 
 
 0
-50
-9
+12
+6
+riotee
+FlexyPin_1x08_P2.54mm
+
+
+0
+16
+8
 riotee
 JST_S2B-PH-SM4-TB(LF)(SN)
 
