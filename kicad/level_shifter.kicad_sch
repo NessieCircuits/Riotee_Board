@@ -1555,7 +1555,7 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 629ef8e5-3ee8-4a70-b89a-20a53c6b6491)
   )
-  (hierarchical_label "TransEnable[0..3]" (shape input) (at 39.37 137.16 180)
+  (hierarchical_label "TransEnable[0..2]" (shape input) (at 39.37 137.16 180)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 6a0a366b-1b07-4a70-af63-7d3679aee363)
   )
