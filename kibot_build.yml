@@ -10,7 +10,7 @@ outputs:
   # PDF Schematic Print (Portable Document Format):
   # This is the main format to document your schematic.
   # This output is what you get from the 'File/Print' menu in eeschema.
-  - name: 'pdf_sch_print_example'
+  - name: 'pdf_sch_print'
     comment: 'Exports schematics to PDF'
     type: 'pdf_sch_print'
     dir: '.'
@@ -24,7 +24,7 @@ outputs:
       # [string='%f-%i%I%v.%x'] Filename for the output PDF (%i=schematic, %x=pdf). Affected by global options
       output: 'schematics.%x'
 
-  - name: 'pcb_print_example'
+  - name: 'pcb_print'
     comment: 'Prints the PCB'
     type: 'pcb_print'
     dir: '.'
@@ -195,6 +195,94 @@ outputs:
           tent_vias: true
       # [boolean=true] Include the title-block (worksheet, frame, etc.)
       plot_sheet_reference: true
+      # [number=1280] [0,7680] Width of the PNG in pixels. Use 0 to use as many pixels as the DPI needs for the page size
+      png_width: 1280
+      # [boolean=true] Try to draw the solder mask as a real solder mask, not the negative used for fabrication.
+      # In order to get a good looking select a color with transparency, i.e. '#14332440'.
+      # PcbDraw must be installed in order to use this option
+      realistic_solder_mask: true
+      # [number=1.0] Default scale factor (0 means autoscaling)
+      scaling: 0
+      # [string=''] Worksheet file (.kicad_wks) to use. Leave empty to use the one specified in the project
+      sheet_reference_layout: ''
+      # [number=4] [0,6] Scale factor used to represent 1 mm in the SVG (KiCad 6).
+      # The value is how much zeros has the multiplier (1 mm = 10 power `svg_precision` units).
+      # Note that for an A4 paper Firefox 91 and Chrome 105 can't handle more than 5
+      svg_precision: 4
+  - name: 'assembly_print'
+    comment: 'Prints the assembly plan'
+    type: 'pcb_print'
+    dir: '.'
+    options:
+      # [boolean=false] Add a background to the pages, see `background_color`
+      add_background: false
+      # [number=0] Default horizontal margin used for the autoscaling mode [mm]
+      autoscale_margin_x: 15
+      # [number=0] Default vertical margin used for the autoscaling mode [mm]
+      autoscale_margin_y: 15
+      # [string='#FFFFFF'] Color for the background when `add_background` is enabled
+      background_color: '#FFFFFF'
+      # [string=''] Background image, must be an SVG, only when `add_background` is enabled
+      background_image: ''
+      # [string=''] Color used for blind/buried `colored_vias`
+      blind_via_color: ''
+      # [string='_builtin_classic'] Selects the color theme. Only applies to KiCad 6.
+      # To use the KiCad 6 default colors select `_builtin_default`.
+      # Usually user colors are stored as `user`, but you can give it another name
+      color_theme: '_builtin_classic'
+      # [boolean=true] Plot through-hole in a different color. Like KiCad GUI does
+      colored_pads: true
+      # [boolean=true] Plot vias in a different color. Like KiCad GUI does
+      colored_vias: true
+      # [number=360] [36,1200] Resolution (Dots Per Inch) for the output file. Most objects are vectors, but thing
+      # like the the solder mask are handled as images by the conversion tools
+      dpi: 360
+      # [string='full'] [none,small,full] What to use to indicate the drill places, can be none, small or full (for real scale)
+      drill_marks: 'full'
+      # [boolean=false] Add the `Edge.Cuts` to all the pages
+      force_edge_cuts: true
+      # [string='PDF'] [PDF,SVG,PNG,EPS,PS] Format for the output file/s.
+      # Note that for PS you need `ghostscript` which isn't part of the default docker images
+      format: 'PDF'
+      # [boolean=false] Hide components in the Fab layer that are marked as excluded by a variant.
+      # Affected by global options
+      hide_excluded: false
+      # [string=''] Color used for micro `colored_vias`
+      micro_via_color: ''
+      # [string='%f-%i%I%v.%x'] Filename for the output (%i=assembly, %x=pdf/ps)/(%i=assembly_page_NN, %x=svg/png/eps).
+      # Consult the `page_number_as_extension` and `page_id` options. Affected by global options
+      output: 'assembly.%x'
+      # [list(dict)] List of pages to include in the output document.
+      # Each page contains one or more layers of the PCB
+      pages:
+        - colored_holes: true
+          # [boolean=false] Do not plot the component pads in the silk screen (KiCad 5.x only)
+          exclude_pads_from_silkscreen: false
+          # [string='#000000'] Color used for the holes when `colored_holes` is enabled
+          holes_color: '#000000'
+          # [list(dict)|list(string)|string] List of layers printed in this page.
+          # Order is important, the last goes on top.
+          # You can reuse other layers lists, some options aren't used here, but they are valid
+          layers:
+            - 'F.Fab'
+          # [boolean=false] Invert black and white. Only useful for a single layer
+          negative_plot: false
+          # [string='%02d'] Text to differentiate the pages. Use %d (like in C) to get the page number
+          page_id: '%02d'
+          # [number=1.0] Scale factor (0 means autoscaling)
+          scaling: 0
+          # [string='Assembly'] Text to use for the `sheet` in the title block
+          sheet: 'Assembly'
+          # [string=''] Color to use for the frame and title block
+          sheet_reference_color: ''
+          # [boolean=false] Try to sort the layers in the same order that uses KiCad for printing
+          sort_layers: false
+          # [boolean=true] Cover the vias
+          tent_vias: true
+          # [boolean=true] Change the drill holes to be colored instead of white
+
+      # [boolean=true] Include the title-block (worksheet, frame, etc.)
+      plot_sheet_reference: false
       # [number=1280] [0,7680] Width of the PNG in pixels. Use 0 to use as many pixels as the DPI needs for the page size
       png_width: 1280
       # [boolean=true] Try to draw the solder mask as a real solder mask, not the negative used for fabrication.

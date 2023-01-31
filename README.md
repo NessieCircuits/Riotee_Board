@@ -7,6 +7,7 @@ The Riotee board is a development board for battery-free wireless devices. The o
 Latest design files:
  - [Schematics](https://www.riotee.nessie-circuits.de/artifacts/board/latest/schematics.pdf)
  - [Layout](https://www.riotee.nessie-circuits.de/artifacts/board/latest/pcb.pdf)
+ - [Assembly plan](https://www.riotee.nessie-circuits.de/artifacts/board/latest/assembly.pdf)
  - [3D rendering](https://www.riotee.nessie-circuits.de/artifacts/board/latest/3drendering.png)
 
 ## Specification
