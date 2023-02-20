@@ -1,4 +1,4 @@
-20851319244234404
+20856353808340059
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -87199,12 +87199,12 @@ NXP_SOT833-1
 8
 8
 riotee
-PinHeader_1x05_P2.54mm_Plain
+PinHeader_1x07_P2.54mm_Plain
 Through hole straight pin header, 1x05, 2.54mm pitch, single row
 Through hole pin header THT 1x05 2.54mm single row
 0
-5
-5
+7
+7
 riotee
 PinHeader_1x10_P2.54mm_Vertical
 Through hole straight pin header, 1x10, 2.54mm pitch, single row
@@ -87279,6 +87279,27 @@ riotee
 TI_DBV0005A
 SOT, 5 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AA), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOT TO_SOT_SMD
+0
+5
+5
+riotee
+TI_DCK0005A
+SOT-353, SC-70-5
+SOT-353 SC-70-5
+0
+5
+5
+riotee
+TI_DQN0004A
+X2SON 5 pin 1x1mm package (Reference Datasheet: http://www.ti.com/lit/ds/sbvs193d/sbvs193d.pdf Reference part: TPS383x) [StepUp generated footprint]
+X2SON
+0
+5
+5
+riotee
+TI_YZP0005
+
+
 0
 5
 5
