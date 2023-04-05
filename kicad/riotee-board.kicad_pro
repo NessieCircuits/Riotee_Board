@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -411,8 +411,8 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "../../../../../tmp/riotee-board.step",
+      "vrml": "../../tmp/riotee_3danime/riotee-board.wrl"
     },
     "page_layout_descr_file": ""
   },
