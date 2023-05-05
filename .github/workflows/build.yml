@@ -13,7 +13,7 @@ jobs:
       with:
         submodules: true
 
-    - uses: INTI-CMNB/KiBot@v2_k6
+    - uses: INTI-CMNB/KiBot@v2_k7
       with:
         config: kibot_build.yml
         dir: kibot_outputs

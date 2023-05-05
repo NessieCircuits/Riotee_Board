@@ -1,3 +1,4 @@
+fp-info-cache
 *.kicad_sch-bak
 *-backups/*
 *.kicad_prl
@@ -7,3 +8,6 @@
 \#auto_saved_files#
 _autosave-*.kicad_pcb
 gerber/
+
+riotee-board-panel.kicad_pcb
+riotee-board-panel.kicad_pro
