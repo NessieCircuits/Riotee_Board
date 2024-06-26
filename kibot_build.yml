@@ -3,8 +3,11 @@ kibot:
 
 preflight:
   check_zone_fills: true
-  run_erc: true
-  run_drc: false
+  erc:
+    filters:
+    - filter: 'ignore simulation errors'
+      error: 'simulation_model_issue'
+  drc: true
 
 outputs:
   # PDF Schematic Print (Portable Document Format):
@@ -15,12 +18,6 @@ outputs:
     type: 'pdf_sch_print'
     dir: '.'
     options:
-      # [boolean=true] Generate with all hierarchical sheets
-      all_pages: true
-      # [boolean=true] Include the frame and title block
-      frame: true
-      # [boolean=false] Generate a monochromatic PDF
-      monochrome: false
       # [string='%f-%i%I%v.%x'] Filename for the output PDF (%i=schematic, %x=pdf). Affected by global options
       output: 'schematics.%x'
 
@@ -29,274 +26,135 @@ outputs:
     type: 'pcb_print'
     dir: '.'
     options:
-      # [boolean=false] Add a background to the pages, see `background_color`
-      add_background: false
       # [number=0] Default horizontal margin used for the autoscaling mode [mm]
       autoscale_margin_x: 15
       # [number=0] Default vertical margin used for the autoscaling mode [mm]
       autoscale_margin_y: 15
-      # [string='#FFFFFF'] Color for the background when `add_background` is enabled
-      background_color: '#FFFFFF'
-      # [string=''] Background image, must be an SVG, only when `add_background` is enabled
-      background_image: ''
-      # [string=''] Color used for blind/buried `colored_vias`
-      blind_via_color: ''
-      # [string='_builtin_classic'] Selects the color theme. Only applies to KiCad 6.
-      # To use the KiCad 6 default colors select `_builtin_default`.
-      # Usually user colors are stored as `user`, but you can give it another name
-      color_theme: '_builtin_classic'
-      # [boolean=true] Plot through-hole in a different color. Like KiCad GUI does
-      colored_pads: true
-      # [boolean=true] Plot vias in a different color. Like KiCad GUI does
-      colored_vias: true
-      # [number=360] [36,1200] Resolution (Dots Per Inch) for the output file. Most objects are vectors, but thing
-      # like the the solder mask are handled as images by the conversion tools
-      dpi: 360
-      # [string='full'] [none,small,full] What to use to indicate the drill places, can be none, small or full (for real scale)
-      drill_marks: 'full'
       # [boolean=false] Add the `Edge.Cuts` to all the pages
       force_edge_cuts: true
       # [string='PDF'] [PDF,SVG,PNG,EPS,PS] Format for the output file/s.
       # Note that for PS you need `ghostscript` which isn't part of the default docker images
       format: 'PDF'
-      # [boolean=false] Hide components in the Fab layer that are marked as excluded by a variant.
-      # Affected by global options
-      hide_excluded: false
-      # [string=''] Color used for micro `colored_vias`
-      micro_via_color: ''
       # [string='%f-%i%I%v.%x'] Filename for the output (%i=assembly, %x=pdf/ps)/(%i=assembly_page_NN, %x=svg/png/eps).
       # Consult the `page_number_as_extension` and `page_id` options. Affected by global options
       output: 'pcb.%x'
       # [list(dict)] List of pages to include in the output document.
       # Each page contains one or more layers of the PCB
       pages:
-          # [boolean=true] Change the drill holes to be colored instead of white
-        - colored_holes: true
-          # [boolean=false] Do not plot the component pads in the silk screen (KiCad 5.x only)
-          exclude_pads_from_silkscreen: false
-          # [string='#000000'] Color used for the holes when `colored_holes` is enabled
-          holes_color: '#000000'
+        # [number=1.0] Scale factor (0 means autoscaling)
+        - scaling: 0
           # [list(dict)|list(string)|string] List of layers printed in this page.
           # Order is important, the last goes on top.
           # You can reuse other layers lists, some options aren't used here, but they are valid
           layers:
             - 'F.Cu'
-          # [boolean=false] Invert black and white. Only useful for a single layer
-          negative_plot: false
-          # [string='%02d'] Text to differentiate the pages. Use %d (like in C) to get the page number
-          page_id: '%02d'
-          # [number=1.0] Scale factor (0 means autoscaling)
-          scaling: 0
           # [string='Assembly'] Text to use for the `sheet` in the title block
           sheet: 'Top Copper'
-          # [string=''] Color to use for the frame and title block
-          sheet_reference_color: ''
-          # [boolean=false] Try to sort the layers in the same order that uses KiCad for printing
-          sort_layers: false
-          # [boolean=true] Cover the vias
-          tent_vias: true
-          # [boolean=true] Change the drill holes to be colored instead of white
-        - colored_holes: true
-          # [boolean=false] Do not plot the component pads in the silk screen (KiCad 5.x only)
-          exclude_pads_from_silkscreen: false
-          # [string='#000000'] Color used for the holes when `colored_holes` is enabled
-          holes_color: '#000000'
+        # [number=1.0] Scale factor (0 means autoscaling)
+        - scaling: 0
           # [list(dict)|list(string)|string] List of layers printed in this page.
           # Order is important, the last goes on top.
           # You can reuse other layers lists, some options aren't used here, but they are valid
           layers:
             - 'B.Cu'
-          # [boolean=false] Invert black and white. Only useful for a single layer
-          negative_plot: false
-          # [string='%02d'] Text to differentiate the pages. Use %d (like in C) to get the page number
-          page_id: '%02d'
-          # [number=1.0] Scale factor (0 means autoscaling)
-          scaling: 0
           # [string='Assembly'] Text to use for the `sheet` in the title block
           sheet: 'Bottom Copper'
-          # [string=''] Color to use for the frame and title block
-          sheet_reference_color: ''
-          # [boolean=false] Try to sort the layers in the same order that uses KiCad for printing
-          sort_layers: false
-          # [boolean=true] Cover the vias
-          tent_vias: true
-          # [boolean=true] Change the drill holes to be colored instead of white
-        - colored_holes: true
-          # [boolean=false] Do not plot the component pads in the silk screen (KiCad 5.x only)
-          exclude_pads_from_silkscreen: false
-          # [string='#000000'] Color used for the holes when `colored_holes` is enabled
-          holes_color: '#000000'
+        # [number=1.0] Scale factor (0 means autoscaling)
+        # [number=1.0] Scale factor (0 means autoscaling)
+        - scaling: 0
+          # [list(dict)|list(string)|string] List of layers printed in this page.
+          # Order is important, the last goes on top.
+          # You can reuse other layers lists, some options aren't used here, but they are valid
+          layers:
+            - 'In1.Cu'
+          # [string='Assembly'] Text to use for the `sheet` in the title block
+          sheet: 'Inner 1 Copper'
+        # [number=1.0] Scale factor (0 means autoscaling)
+        - scaling: 0
+          # [list(dict)|list(string)|string] List of layers printed in this page.
+          # Order is important, the last goes on top.
+          # You can reuse other layers lists, some options aren't used here, but they are valid
+          layers:
+            - 'In2.Cu'
+          # [string='Assembly'] Text to use for the `sheet` in the title block
+          sheet: 'Inner 2 Copper'
+        # [number=1.0] Scale factor (0 means autoscaling)
+        - scaling: 0
           # [list(dict)|list(string)|string] List of layers printed in this page.
           # Order is important, the last goes on top.
           # You can reuse other layers lists, some options aren't used here, but they are valid
           layers:
             - 'F.Mask'
-          # [boolean=false] Invert black and white. Only useful for a single layer
-          negative_plot: false
-          # [string='%02d'] Text to differentiate the pages. Use %d (like in C) to get the page number
-          page_id: '%02d'
-          # [number=1.0] Scale factor (0 means autoscaling)
-          scaling: 0
           # [string='Assembly'] Text to use for the `sheet` in the title block
           sheet: 'Top Solder Mask'
-          # [string=''] Color to use for the frame and title block
-          sheet_reference_color: ''
-          # [boolean=false] Try to sort the layers in the same order that uses KiCad for printing
-          sort_layers: false
-          # [boolean=true] Cover the vias
-          tent_vias: true
-        - colored_holes: true
-          # [boolean=false] Do not plot the component pads in the silk screen (KiCad 5.x only)
-          exclude_pads_from_silkscreen: false
-          # [string='#000000'] Color used for the holes when `colored_holes` is enabled
-          holes_color: '#000000'
+          # [number=1.0] Scale factor (0 means autoscaling)
+        - scaling: 0
           # [list(dict)|list(string)|string] List of layers printed in this page.
           # Order is important, the last goes on top.
           # You can reuse other layers lists, some options aren't used here, but they are valid
           layers:
             - 'B.Mask'
-          # [boolean=false] Invert black and white. Only useful for a single layer
-          negative_plot: false
-          # [string='%02d'] Text to differentiate the pages. Use %d (like in C) to get the page number
-          page_id: '%02d'
-          # [number=1.0] Scale factor (0 means autoscaling)
-          scaling: 0
           # [string='Assembly'] Text to use for the `sheet` in the title block
           sheet: 'Bottom Solder Mask'
-          # [string=''] Color to use for the frame and title block
-          sheet_reference_color: ''
-          # [boolean=false] Try to sort the layers in the same order that uses KiCad for printing
-          sort_layers: false
-          # [boolean=true] Cover the vias
-          tent_vias: true
-        - colored_holes: true
-          # [boolean=false] Do not plot the component pads in the silk screen (KiCad 5.x only)
-          exclude_pads_from_silkscreen: false
-          # [string='#000000'] Color used for the holes when `colored_holes` is enabled
-          holes_color: '#000000'
+          # [number=1.0] Scale factor (0 means autoscaling)
+        - scaling: 0
+          # [list(dict)|list(string)|string] List of layers printed in this page.
+          # Order is important, the last goes on top.
+          # You can reuse other layers lists, some options aren't used here, but they are valid
+          layers:
+            - 'B.Silkscreen'
+          # [string='Assembly'] Text to use for the `sheet` in the title block
+          sheet: 'Bottom Silkscreen'
+          # [number=1.0] Scale factor (0 means autoscaling)
+        - scaling: 0
           # [list(dict)|list(string)|string] List of layers printed in this page.
           # Order is important, the last goes on top.
           # You can reuse other layers lists, some options aren't used here, but they are valid
           layers:
             - 'F.Paste'
-          # [boolean=false] Invert black and white. Only useful for a single layer
-          negative_plot: false
-          # [string='%02d'] Text to differentiate the pages. Use %d (like in C) to get the page number
-          page_id: '%02d'
-          # [number=1.0] Scale factor (0 means autoscaling)
-          scaling: 0
           # [string='Assembly'] Text to use for the `sheet` in the title block
           sheet: 'Top Stencil'
-          # [string=''] Color to use for the frame and title block
-          sheet_reference_color: ''
-          # [boolean=false] Try to sort the layers in the same order that uses KiCad for printing
-          sort_layers: false
-          # [boolean=true] Cover the vias
-          tent_vias: true
-      # [boolean=true] Include the title-block (worksheet, frame, etc.)
-      plot_sheet_reference: true
       # [number=1280] [0,7680] Width of the PNG in pixels. Use 0 to use as many pixels as the DPI needs for the page size
       png_width: 1280
-      # [boolean=true] Try to draw the solder mask as a real solder mask, not the negative used for fabrication.
-      # In order to get a good looking select a color with transparency, i.e. '#14332440'.
-      # PcbDraw must be installed in order to use this option
-      realistic_solder_mask: true
       # [number=1.0] Default scale factor (0 means autoscaling)
       scaling: 0
-      # [string=''] Worksheet file (.kicad_wks) to use. Leave empty to use the one specified in the project
-      sheet_reference_layout: ''
-      # [number=4] [0,6] Scale factor used to represent 1 mm in the SVG (KiCad 6).
-      # The value is how much zeros has the multiplier (1 mm = 10 power `svg_precision` units).
-      # Note that for an A4 paper Firefox 91 and Chrome 105 can't handle more than 5
-      svg_precision: 4
+
   - name: 'assembly_print'
     comment: 'Prints the assembly plan'
     type: 'pcb_print'
     dir: '.'
     options:
-      # [boolean=false] Add a background to the pages, see `background_color`
-      add_background: false
       # [number=0] Default horizontal margin used for the autoscaling mode [mm]
       autoscale_margin_x: 15
       # [number=0] Default vertical margin used for the autoscaling mode [mm]
       autoscale_margin_y: 15
-      # [string='#FFFFFF'] Color for the background when `add_background` is enabled
-      background_color: '#FFFFFF'
-      # [string=''] Background image, must be an SVG, only when `add_background` is enabled
-      background_image: ''
-      # [string=''] Color used for blind/buried `colored_vias`
-      blind_via_color: ''
-      # [string='_builtin_classic'] Selects the color theme. Only applies to KiCad 6.
-      # To use the KiCad 6 default colors select `_builtin_default`.
-      # Usually user colors are stored as `user`, but you can give it another name
-      color_theme: '_builtin_classic'
-      # [boolean=true] Plot through-hole in a different color. Like KiCad GUI does
-      colored_pads: true
-      # [boolean=true] Plot vias in a different color. Like KiCad GUI does
-      colored_vias: true
-      # [number=360] [36,1200] Resolution (Dots Per Inch) for the output file. Most objects are vectors, but thing
-      # like the the solder mask are handled as images by the conversion tools
-      dpi: 360
-      # [string='full'] [none,small,full] What to use to indicate the drill places, can be none, small or full (for real scale)
-      drill_marks: 'full'
       # [boolean=false] Add the `Edge.Cuts` to all the pages
       force_edge_cuts: true
       # [string='PDF'] [PDF,SVG,PNG,EPS,PS] Format for the output file/s.
       # Note that for PS you need `ghostscript` which isn't part of the default docker images
       format: 'PDF'
-      # [boolean=false] Hide components in the Fab layer that are marked as excluded by a variant.
-      # Affected by global options
-      hide_excluded: false
-      # [string=''] Color used for micro `colored_vias`
-      micro_via_color: ''
       # [string='%f-%i%I%v.%x'] Filename for the output (%i=assembly, %x=pdf/ps)/(%i=assembly_page_NN, %x=svg/png/eps).
       # Consult the `page_number_as_extension` and `page_id` options. Affected by global options
       output: 'assembly.%x'
       # [list(dict)] List of pages to include in the output document.
       # Each page contains one or more layers of the PCB
       pages:
-        - colored_holes: true
-          # [boolean=false] Do not plot the component pads in the silk screen (KiCad 5.x only)
-          exclude_pads_from_silkscreen: false
-          # [string='#000000'] Color used for the holes when `colored_holes` is enabled
-          holes_color: '#000000'
+        # [number=1.0] Scale factor (0 means autoscaling)
+        - scaling: 0
           # [list(dict)|list(string)|string] List of layers printed in this page.
           # Order is important, the last goes on top.
           # You can reuse other layers lists, some options aren't used here, but they are valid
           layers:
             - 'F.Fab'
-          # [boolean=false] Invert black and white. Only useful for a single layer
-          negative_plot: false
-          # [string='%02d'] Text to differentiate the pages. Use %d (like in C) to get the page number
-          page_id: '%02d'
-          # [number=1.0] Scale factor (0 means autoscaling)
-          scaling: 0
           # [string='Assembly'] Text to use for the `sheet` in the title block
           sheet: 'Assembly'
-          # [string=''] Color to use for the frame and title block
-          sheet_reference_color: ''
-          # [boolean=false] Try to sort the layers in the same order that uses KiCad for printing
-          sort_layers: false
-          # [boolean=true] Cover the vias
-          tent_vias: true
-          # [boolean=true] Change the drill holes to be colored instead of white
-
       # [boolean=true] Include the title-block (worksheet, frame, etc.)
       plot_sheet_reference: false
       # [number=1280] [0,7680] Width of the PNG in pixels. Use 0 to use as many pixels as the DPI needs for the page size
       png_width: 1280
-      # [boolean=true] Try to draw the solder mask as a real solder mask, not the negative used for fabrication.
-      # In order to get a good looking select a color with transparency, i.e. '#14332440'.
-      # PcbDraw must be installed in order to use this option
-      realistic_solder_mask: true
       # [number=1.0] Default scale factor (0 means autoscaling)
       scaling: 0
-      # [string=''] Worksheet file (.kicad_wks) to use. Leave empty to use the one specified in the project
-      sheet_reference_layout: ''
-      # [number=4] [0,6] Scale factor used to represent 1 mm in the SVG (KiCad 6).
-      # The value is how much zeros has the multiplier (1 mm = 10 power `svg_precision` units).
-      # Note that for an A4 paper Firefox 91 and Chrome 105 can't handle more than 5
-      svg_precision: 4
+
   - name: 'render 3D image'
     comment: "Exports the image generated by KiCad's 3D viewer."
     type: 'render_3d'
@@ -311,91 +169,23 @@ outputs:
       background2: '#FFFFFF'
       # [string='#332B16'] Color for the board without copper or solder mask
       board: '#332B17E6'
-      # [boolean=true] Clip silkscreen at via annuli (KiCad 6)
-      clip_silk_on_via_annulus: true
       # [string='#8b898c'] Color for the copper
       copper: '#B39C00FF'
-      # [string|list(string)='_none'] Name of the filter to mark components as not fitted.
-      # A short-cut to use for simple cases where a variant is an overkill
-      dnf_filter: '_none'
-      # [boolean=true] Downloads missing 3D models from KiCad git. Only applies to models in KISYS3DMOD
-      download: true
       # [number=720] Image height (aprox.)
       height: 1440
-      # [list(string)=[]] List of components to highlight
-      highlight: []
-      # [boolean=false] Highlight over the component (not under)
-      highlight_on_top: false
-      # [number=1.5] [0,1000] How much the highlight extends around the component [mm]
-      highlight_padding: 1.5
-      # [string='https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/'] Base URL for the KiCad 3D models
-      kicad_3d_url: 'https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/'
-      # [number=0] Steps to move in the X axis, positive is to the right.
-      # Just like pressing the right arrow in the 3D viewer
-      move_x: 0
-      # [number=0] Steps to move in the Y axis, positive is up.
-      # Just like pressing the up arrow in the 3D viewer
-      move_y: 0
-      # [boolean=false] Used to exclude 3D models for surface mount components
-      no_smd: false
-      # [boolean=false] Used to exclude 3D models for through hole components
-      no_tht: false
-      # [boolean=false] Used to exclude 3D models for components with 'virtual' attribute
-      no_virtual: false
       # [boolean=false] Enable the orthographic projection mode (top view looks flat)
       orthographic: true
       # [string='%f-%i%I%v.%x'] Name for the generated image file (%i='3D_$VIEW' %x='png'). Affected by global options
       output: '3drendering.%x'
-      # [string|list(string)='_none'] Name of the filter to transform fields before applying other filters.
-      # A short-cut to use for simple cases where a variant is an overkill
-      pre_transform: '_none'
-      # [boolean=false] Enable the ray tracing. Much better result, but slow, and you'll need to adjust `wait_rt`
-      ray_tracing: false
-      # [number=0] Steps to rotate around the X axis, positive is clockwise.
-      # Each step is currently 10 degrees. Only for KiCad 6
-      rotate_x: 0
-      # [number=0] Steps to rotate around the Y axis, positive is clockwise.
-      # Each step is currently 10 degrees. Only for KiCad 6
-      rotate_y: 0
-      # [number=0] Steps to rotate around the Z axis, positive is clockwise.
-      # Each step is currently 10 degrees. Only for KiCad 6
-      rotate_z: 0
-      # [list(string)|string=all] [none,all] List of components to draw, can be also a string for `none` or `all`.
-      # Unlike the `pcbdraw` output, the default is `all`
-      show_components: all
-      # [boolean=true] Show the silkscreen layers (KiCad 6)
-      show_silkscreen: true
-      # [boolean=true] Show the solder mask layers (KiCad 6)
-      show_soldermask: true
-      # [boolean=true] Show the solder paste layers (KiCad 6)
-      show_solderpaste: true
-      # [boolean=true] Show filled areas in zones (KiCad 6)
-      show_zones: true
       # [string='#d5dce4'] Color for the silk screen
       silk: '#E6E6E6FF'
       # [string='#208b47'] Color for the solder mask
       solder_mask: '#143324D4'
       # [string='#808080'] Color for the solder paste
       solder_paste: '#808080FF'
-      # [boolean=true] Clip silkscreen at solder mask edges (KiCad 6)
-      subtract_mask_from_silk: true
       # [boolean=false] When enabled the image will be post-processed to make the background transparent.
       # In this mode the `background1` and `background2` colors are ignored
       transparent_background: true
-      # [string='#00ff00'] Color used for the chroma key. Adjust it if some regions of the board becomes transparent
-      transparent_background_color: '#00ff00'
-      # [number=15] [0,100] Chroma key tolerance (percent). Bigger values will remove more pixels
-      transparent_background_fuzz: 15
-      # [string=''] Board variant to apply
-      variant: ''
-      # [string='top'] [top,bottom,front,rear,right,left,z,Z,y,Y,x,X] Point of view
-      view: 'top'
-      # `wait_ray_tracing` is an alias for `wait_render`
-      # [number=-600] How many seconds we must wait before capturing the render (ray tracing or normal).
-      # Lamentably KiCad can save an unfinished image. Enlarge it if your image looks partially rendered.
-      # Use negative values to enable the auto-detect using CPU load.
-      # In this case the value is interpreted as a time-out.
-      wait_render: -600
       # [number=1280] Image width (aprox.)
       width: 2560
       # [number=0] Zoom steps. Use positive to enlarge, get closer, and negative to reduce.

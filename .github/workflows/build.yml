@@ -9,11 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         submodules: true
 
-    - uses: INTI-CMNB/KiBot@v2_k7
+    - uses: INTI-CMNB/KiBot@v2_k8
       with:
         config: kibot_build.yml
         dir: kibot_outputs
