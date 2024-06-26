@@ -19,7 +19,7 @@ Essentially, the Riotee board combines a [Riotee probe](https://github.com/Nessi
 Specification:
  - 56mm x 23mm board with two expansion headers for shields
  - Boost converter with software-defined maximum power point tracking and energy measurement
- - 44uF on-board capacitance
+ - 66uF on-board capacitance
  - 2V regulated output voltage
  - 64 MHz ARM Cortex-M4 MCU with integrated 2.4GHz radio
  - 128kB non-volatile FRAM to retain appliccation state across power outages
@@ -32,4 +32,4 @@ Specification:
 
 ## Firmware
 
-The board has a dedicated controller (Raspberry Pi RP2040) that manages the upload of new firmware and the communication with a PC. This controller is powered from USB whenever the board is connected to a PC. The software running on the controller is the same as on the [Riotee probe](https://github.com/NessieCircuits/Riotee_ProbeHardware) and can be found in [this repository](https://github.com/NessieCircuits/Riotee_ProbeFirmware). To upgrade the firmware on the controller, connect a wire from one of the ground pins to the test pad labelled 'USB_BOOT' on the bottom of the board, while plugging in the USB cable. A removable storage drive should appear on your PC. Drop a UF2 compatible binary into the drive.
+The board has a dedicated controller (Raspberry Pi RP2040) that manages the upload of new firmware and the communication with a PC. This controller is powered from USB whenever the board is connected to a PC. The software running on the controller is the same as on the [Riotee probe](https://github.com/NessieCircuits/Riotee_ProbeHardware) and can be found in [this repository](https://github.com/NessieCircuits/Riotee_ProbeSoftware). To upgrade the firmware on the controller, connect a wire from one of the ground pins to the test pad labelled 'USB_BOOT' on the bottom of the board, while plugging in the USB cable. A removable storage drive should appear on your PC. Drop a UF2 compatible binary into the drive.
