@@ -191,3 +191,47 @@ outputs:
       # [number=0] Zoom steps. Use positive to enlarge, get closer, and negative to reduce.
       # Same result as using the mouse wheel in the 3D viewer
       zoom: 5
+  - name: 'gerber'
+    comment: 'This is the main fabrication format for the PCB.'
+    type: 'gerber'
+    dir: '.'
+    layers:
+     - 'F.Cu'
+     - 'In1.Cu'
+     - 'In2.Cu'
+     - 'B.Cu'
+     - 'F.Paste'
+     - 'B.Silkscreen'
+     - 'F.Mask'
+     - 'B.Mask'
+     - 'Edge.Cuts'
+  - name: 'excellon'
+    comment: 'This is the main format for the drilling machine.'
+    type: 'excellon'
+    dir: '.'
+  - name: 'compress'
+    comment: 'Generates a compressed file containing gerber and drill files.'
+    type: 'compress'
+    dir: '.'
+    options:
+      # [list(dict)] Which files will be included
+      files:
+        # [string=''] Destination directory inside the archive, empty means the same of the file
+        - dest: ''
+          # [string='.*'] A regular expression that source files must match
+          filter: '.*\.gbr.*|.*\.drl.*'
+          # [string='*'] File names to add, wildcards allowed. Use ** for recursive match.
+          # By default this pattern is applied to the output dir specified with `-d` command line option.
+          # See the `from_cwd` and `from_output_dir` options
+          source: '*'
+      # [boolean=false] Move the files to the archive. In other words: remove the files after adding them to the archive
+      move_files: true
+      # [string='%f-%i%I%v.%x'] Name for the generated archive (%i=name of the output %x=according to format). Affected by global options
+      output: 'gerber.%x'
+  - name: 'bom'
+    comment: 'Used to generate the BoM in CSV, HTML, TSV, TXT, XML or XLSX format using the internal BoM.'
+    type: 'bom'
+    dir: '.'
+    options:
+      # [string='%f-%i%I%v.%x'] filename for the output (%i=bom). Affected by global options
+      output: 'bom.%x'

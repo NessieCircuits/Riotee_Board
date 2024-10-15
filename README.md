@@ -9,6 +9,8 @@ Latest design files:
  - [Layout](https://www.riotee.nessie-circuits.de/artifacts/board/latest/pcb.pdf)
  - [Assembly plan](https://www.riotee.nessie-circuits.de/artifacts/board/latest/assembly.pdf)
  - [3D rendering](https://www.riotee.nessie-circuits.de/artifacts/board/latest/3drendering.png)
+ - [Gerber](https://www.riotee.nessie-circuits.de/artifacts/board/latest/gerber.zip)
+ - [BOM](https://www.riotee.nessie-circuits.de/artifacts/board/latest/bom.csv)
 
 ## Specification
 
