@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "e235c9a3-080d-42b7-93df-883e69095a9f")
 	(paper "A4")
 	(lib_symbols)
@@ -168,6 +168,10 @@
 	(sheet
 		(at 62.23 90.17)
 		(size 52.07 50.8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -197,103 +201,103 @@
 		)
 		(pin "USB{D+ D-}" input
 			(at 114.3 95.25 0)
+			(uuid "fbc04c79-8054-46b6-bc4a-64c515d1b969")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fbc04c79-8054-46b6-bc4a-64c515d1b969")
 		)
 		(pin "SwdOut{CLK IO}" input
 			(at 114.3 121.92 0)
+			(uuid "2f4884ea-7e9f-4a26-bc81-c0c8eb121c1e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2f4884ea-7e9f-4a26-bc81-c0c8eb121c1e")
 		)
 		(pin "SbwOut{CLK IO}" input
 			(at 114.3 124.46 0)
+			(uuid "fcfc7297-7ce6-4299-ab64-579094668eed")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fcfc7297-7ce6-4299-ab64-579094668eed")
 		)
 		(pin "UartRx" input
 			(at 114.3 111.76 0)
+			(uuid "72af2941-d59d-4cb8-a235-51588e96b0a2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "72af2941-d59d-4cb8-a235-51588e96b0a2")
 		)
 		(pin "TargetPowerEnable" input
 			(at 114.3 137.16 0)
+			(uuid "b4731082-73be-409c-9f08-73472340e915")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b4731082-73be-409c-9f08-73472340e915")
 		)
 		(pin "BypassShunt" input
 			(at 114.3 133.35 0)
+			(uuid "c5300b22-5310-4c78-ab93-8da4c4f9ff11")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c5300b22-5310-4c78-ab93-8da4c4f9ff11")
 		)
 		(pin "TransEnable[0..2]" input
 			(at 114.3 104.14 0)
+			(uuid "a23b4b80-2195-4a20-af33-0625d9acd3a9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a23b4b80-2195-4a20-af33-0625d9acd3a9")
 		)
 		(pin "UartTx" input
 			(at 114.3 114.3 0)
+			(uuid "496abfa1-ad80-49a5-bc0c-a3b1142cce0a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "496abfa1-ad80-49a5-bc0c-a3b1142cce0a")
 		)
 		(pin "Trans_UARTRX_Dir" input
 			(at 114.3 109.22 0)
+			(uuid "4055cc41-3577-4085-8266-6dd6432970c5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4055cc41-3577-4085-8266-6dd6432970c5")
 		)
 		(pin "ProgDir" input
 			(at 114.3 119.38 0)
+			(uuid "1ca6492d-3088-47b1-be2d-44d69e50b0f6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1ca6492d-3088-47b1-be2d-44d69e50b0f6")
 		)
 		(instances
 			(project "riotee-board"
@@ -306,6 +310,10 @@
 	(sheet
 		(at 203.2 100.33)
 		(size 22.86 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -324,7 +332,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "module.kicad_sch"
+		(property "Sheetfile" "module_connection.kicad_sch"
 			(at 203.2 141.5546 0)
 			(effects
 				(font
@@ -335,63 +343,63 @@
 		)
 		(pin "UART_TX" input
 			(at 203.2 111.76 180)
+			(uuid "2b2f50c2-c909-4abd-a444-3b59dd4cada6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2b2f50c2-c909-4abd-a444-3b59dd4cada6")
 		)
 		(pin "SBW{CLK IO}" input
 			(at 203.2 124.46 180)
+			(uuid "9ce01cfd-942b-4970-bdfb-cb9dcbdc41cf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9ce01cfd-942b-4970-bdfb-cb9dcbdc41cf")
 		)
 		(pin "SWD{CLK IO}" input
 			(at 203.2 121.92 180)
+			(uuid "5b555ecb-ee05-4238-b4ff-200e8fa943f2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5b555ecb-ee05-4238-b4ff-200e8fa943f2")
 		)
 		(pin "BypassShunt" input
 			(at 203.2 133.35 180)
+			(uuid "7cc44fe2-ae25-4797-9ab6-b62b10fb0c8e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7cc44fe2-ae25-4797-9ab6-b62b10fb0c8e")
 		)
 		(pin "UART_RX" input
 			(at 203.2 114.3 180)
+			(uuid "652b397e-32d0-4161-8e53-e281a1b9a62a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "652b397e-32d0-4161-8e53-e281a1b9a62a")
 		)
 		(pin "TargetPowerEnable" input
 			(at 203.2 137.16 180)
+			(uuid "f92bdb3b-e695-4161-92af-9417eafb473e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f92bdb3b-e695-4161-92af-9417eafb473e")
 		)
 		(instances
 			(project "riotee-board"
@@ -404,6 +412,10 @@
 	(sheet
 		(at 139.7 100.33)
 		(size 54.61 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -433,113 +445,113 @@
 		)
 		(pin "Target_UART_TX" input
 			(at 194.31 111.76 0)
+			(uuid "157c841c-3ca7-42a5-aaa5-00ee11bad37b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "157c841c-3ca7-42a5-aaa5-00ee11bad37b")
 		)
 		(pin "Host_UART_RX" input
 			(at 139.7 111.76 180)
+			(uuid "54f8ef26-3d59-4bf3-bb62-e9035a9cfa22")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "54f8ef26-3d59-4bf3-bb62-e9035a9cfa22")
 		)
 		(pin "Host_SWD{CLK IO}" input
 			(at 139.7 121.92 180)
+			(uuid "ccdc3cf9-9e90-4c66-a9c9-048b6f57852c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ccdc3cf9-9e90-4c66-a9c9-048b6f57852c")
 		)
 		(pin "Host_SBW{CLK IO}" input
 			(at 139.7 124.46 180)
+			(uuid "a124097b-154f-4336-a429-c325dadf0ed6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a124097b-154f-4336-a429-c325dadf0ed6")
 		)
 		(pin "Target_SBW{CLK IO}" input
 			(at 194.31 124.46 0)
+			(uuid "84246aaf-0981-4a9f-b8d4-b904101e7efb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "84246aaf-0981-4a9f-b8d4-b904101e7efb")
 		)
 		(pin "Target_SWD{CLK IO}" input
 			(at 194.31 121.92 0)
+			(uuid "8c83f0da-0ac2-4445-8839-3117d0eaadc1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8c83f0da-0ac2-4445-8839-3117d0eaadc1")
 		)
 		(pin "TransEnable[0..2]" input
 			(at 139.7 104.14 180)
+			(uuid "488d7c21-eb47-4031-afd8-8a86ec38bc67")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "488d7c21-eb47-4031-afd8-8a86ec38bc67")
 		)
 		(pin "Host_UART_TX" input
 			(at 139.7 114.3 180)
+			(uuid "4f25f6ed-448d-4fb5-b047-e9068e65f301")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4f25f6ed-448d-4fb5-b047-e9068e65f301")
 		)
 		(pin "Target_UART_RX" input
 			(at 194.31 114.3 0)
+			(uuid "46d4060a-7837-4b66-bebf-71ba96c0c309")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "46d4060a-7837-4b66-bebf-71ba96c0c309")
 		)
 		(pin "ProgDir" input
 			(at 139.7 119.38 180)
+			(uuid "456de5e3-7a3e-4c71-8c7e-bd0e6db67269")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "456de5e3-7a3e-4c71-8c7e-bd0e6db67269")
 		)
 		(pin "Trans_UARTRX_Dir" input
 			(at 139.7 109.22 180)
+			(uuid "b736e195-cf14-4ad1-899e-9f5a931083e3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b736e195-cf14-4ad1-899e-9f5a931083e3")
 		)
 		(instances
 			(project "riotee-board"
@@ -552,6 +564,10 @@
 	(sheet
 		(at 62.23 67.31)
 		(size 52.07 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -581,13 +597,13 @@
 		)
 		(pin "USB{D+ D-}" input
 			(at 114.3 72.39 0)
+			(uuid "401ea1a6-0c42-4eb8-9f94-fff9f1743512")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "401ea1a6-0c42-4eb8-9f94-fff9f1743512")
 		)
 		(instances
 			(project "riotee-board"
@@ -602,4 +618,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

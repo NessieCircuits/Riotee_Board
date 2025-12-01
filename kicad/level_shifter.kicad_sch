@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "8e6af566-8e54-4b81-83af-6cae3456f4dc")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -79,7 +81,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -91,7 +93,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -140,9 +142,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -261,12 +266,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -357,12 +367,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -453,6 +468,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "riotee:+2V1"
 			(power)
@@ -530,7 +546,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -542,7 +558,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -556,7 +572,8 @@
 			(symbol "+2V1_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+2V1"
 						(effects
 							(font
@@ -573,6 +590,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "riotee:74LVC2T45GT"
 			(exclude_from_sim no)
@@ -653,18 +671,6 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 -2.54) (xy -2.54 -1.524) (xy -0.762 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -2.54 2.54) (xy -2.54 3.556) (xy -0.762 3.556)
 					)
 					(stroke
@@ -677,55 +683,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 -2.54) (xy 2.794 -3.556) (xy 1.016 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 2.54) (xy 2.794 1.524) (xy 1.016 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -3.556) (xy -2.54 -3.556) (xy -2.54 -2.54) (xy -3.81 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -2.54) (xy -0.762 -0.508) (xy 1.016 -1.524) (xy -0.762 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 1.524) (xy -2.54 1.524) (xy -2.54 2.54) (xy -3.81 2.54)
+						(xy -2.54 -2.54) (xy -2.54 -1.524) (xy -0.762 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -749,7 +707,31 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 -1.524) (xy 2.794 -1.524) (xy 2.794 -2.54) (xy 4.064 -2.54)
+						(xy -0.762 1.524) (xy -2.54 1.524) (xy -2.54 2.54) (xy -3.81 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -2.54) (xy -0.762 -0.508) (xy 1.016 -1.524) (xy -0.762 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -3.556) (xy -2.54 -3.556) (xy -2.54 -2.54) (xy -3.81 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -773,6 +755,30 @@
 				)
 				(polyline
 					(pts
+						(xy 1.016 2.54) (xy 1.016 0.762) (xy 1.016 0.508) (xy -0.762 1.524) (xy 1.016 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.524) (xy 2.794 -1.524) (xy 2.794 -2.54) (xy 4.064 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 1.016 -2.54) (xy 1.016 -4.318) (xy 1.016 -4.572) (xy -0.762 -3.556) (xy 1.016 -2.54)
 					)
 					(stroke
@@ -785,7 +791,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 2.54) (xy 1.016 0.762) (xy 1.016 0.508) (xy -0.762 1.524) (xy 1.016 2.54)
+						(xy 2.794 2.54) (xy 2.794 1.524) (xy 1.016 1.524)
 					)
 					(stroke
 						(width 0)
@@ -795,22 +801,16 @@
 						(type none)
 					)
 				)
-				(pin power_in line
-					(at -2.54 12.7 270)
-					(length 2.54)
-					(name "VCCA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 2.794 -2.54) (xy 2.794 -3.556) (xy 1.016 -3.556)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin bidirectional line
@@ -849,24 +849,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -10.16 -7.62 0)
 					(length 2.54)
@@ -885,17 +867,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 10.16 -2.54 180)
+				(pin power_in line
+					(at -2.54 12.7 270)
 					(length 2.54)
-					(name "2B"
+					(name "VCCA"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -903,17 +885,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 10.16 2.54 180)
+				(pin power_in line
+					(at 0 -12.7 90)
 					(length 2.54)
-					(name "1B"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -939,8 +921,56 @@
 						)
 					)
 				)
+				(pin bidirectional line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "1B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "2B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "The translators are supplied directly from controller pins."
+		(exclude_from_sim no)
+		(at 86.36 187.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b75e868-4aad-4577-abdb-e38cdc8c7b49")
 	)
 	(junction
 		(at 71.12 21.59)
@@ -2263,20 +2293,8 @@
 		)
 		(uuid "fb99c0db-0b0d-4931-b844-b06ef74c62fd")
 	)
-	(text "The translators are supplied directly from controller pins."
-		(exclude_from_sim no)
-		(at 86.36 187.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5b75e868-4aad-4577-abdb-e38cdc8c7b49")
-	)
 	(label "TransEnableDec0"
 		(at 57.15 21.59 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2287,7 +2305,6 @@
 	)
 	(label "TransEnableDec0"
 		(at 57.15 86.36 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2298,7 +2315,6 @@
 	)
 	(label "TransEnable2"
 		(at 119.38 154.94 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2309,7 +2325,6 @@
 	)
 	(label "Host_SBW.CLK"
 		(at 57.15 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2320,7 +2335,6 @@
 	)
 	(label "Host_SWD.IO"
 		(at 55.88 116.84 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2331,7 +2345,6 @@
 	)
 	(label "Target_SWD.IO"
 		(at 105.41 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2342,7 +2355,6 @@
 	)
 	(label "TransEnableDec1"
 		(at 193.04 86.36 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2353,7 +2365,6 @@
 	)
 	(label "Target_SBW.CLK"
 		(at 104.14 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2364,7 +2375,6 @@
 	)
 	(label "TransEnable0"
 		(at 60.96 154.94 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2375,7 +2385,6 @@
 	)
 	(label "Target_SBW.IO"
 		(at 103.505 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2386,7 +2395,6 @@
 	)
 	(label "Host_SWD.CLK"
 		(at 57.15 52.07 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2397,7 +2405,6 @@
 	)
 	(label "TransEnableDec0"
 		(at 82.55 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2408,7 +2415,6 @@
 	)
 	(label "TransEnable1"
 		(at 60.96 177.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2419,7 +2425,6 @@
 	)
 	(label "TransEnableDec2"
 		(at 193.04 21.59 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2430,7 +2435,6 @@
 	)
 	(label "TransEnableDec2"
 		(at 142.24 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2441,7 +2445,6 @@
 	)
 	(label "Host_SBW.IO"
 		(at 55.88 111.76 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2452,7 +2455,6 @@
 	)
 	(label "Target_SWD.CLK"
 		(at 104.14 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2463,7 +2465,6 @@
 	)
 	(label "TransEnableDec1"
 		(at 82.55 177.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2475,7 +2476,6 @@
 	(hierarchical_label "Host_UART_RX"
 		(shape input)
 		(at 189.23 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2487,7 +2487,6 @@
 	(hierarchical_label "ProgDir"
 		(shape input)
 		(at 62.23 124.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2499,7 +2498,6 @@
 	(hierarchical_label "Target_SBW{CLK IO}"
 		(shape input)
 		(at 125.73 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2511,7 +2509,6 @@
 	(hierarchical_label "Target_UART_RX"
 		(shape input)
 		(at 241.3 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2523,7 +2520,6 @@
 	(hierarchical_label "Host_SWD{CLK IO}"
 		(shape input)
 		(at 36.83 49.53 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2535,7 +2531,6 @@
 	(hierarchical_label "Trans_UARTRX_Dir"
 		(shape input)
 		(at 189.23 121.92 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2547,7 +2542,6 @@
 	(hierarchical_label "TransEnable[0..2]"
 		(shape input)
 		(at 39.37 143.51 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2559,7 +2553,6 @@
 	(hierarchical_label "Host_UART_TX"
 		(shape input)
 		(at 189.23 111.76 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2571,7 +2564,6 @@
 	(hierarchical_label "Host_SWD{CLK IO}"
 		(shape input)
 		(at 35.56 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2583,7 +2575,6 @@
 	(hierarchical_label "Host_SBW{CLK IO}"
 		(shape input)
 		(at 36.83 44.45 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2595,7 +2586,6 @@
 	(hierarchical_label "Target_UART_TX"
 		(shape input)
 		(at 241.3 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2607,7 +2597,6 @@
 	(hierarchical_label "Target_SBW{CLK IO}"
 		(shape input)
 		(at 124.46 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2619,7 +2608,6 @@
 	(hierarchical_label "Target_SWD{CLK IO}"
 		(shape input)
 		(at 125.73 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2631,7 +2619,6 @@
 	(hierarchical_label "Target_SWD{CLK IO}"
 		(shape input)
 		(at 124.46 49.53 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2643,7 +2630,6 @@
 	(hierarchical_label "Host_SBW{CLK IO}"
 		(shape input)
 		(at 35.56 109.22 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
