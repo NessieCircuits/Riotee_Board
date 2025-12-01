@@ -323,7 +323,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "1e27cf53-0710-4019-b3d0-1fa374a39b5a")
-		(property "Sheetname" "Riotee Module"
+		(property "Sheetname" "Module Connection"
 			(at 203.2 99.6184 0)
 			(effects
 				(font

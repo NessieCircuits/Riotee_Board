@@ -3506,7 +3506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87514c1a-fb1c-4796-9d19-484694a1b5f4")
-		(property "Reference" "#PWR0105"
+		(property "Reference" "#PWR048"
 			(at 227.33 100.33 0)
 			(effects
 				(font
@@ -3556,7 +3556,7 @@
 		(instances
 			(project "riotee-board"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/f12ec016-e798-4082-9926-8503372195ab"
-					(reference "#PWR0105")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)

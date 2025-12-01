@@ -1330,7 +1330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06aaef12-4de8-4738-a4fe-7c58fe44fd01")
-		(property "Reference" "C1041"
+		(property "Reference" "C38"
 			(at 117.221 57.5853 0)
 			(effects
 				(font
@@ -1399,7 +1399,7 @@
 			)
 			(project "riotee-module"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a/71a24394-376e-48cc-9057-ddfdf0a39757/0e9955bb-beb0-499a-aac5-d497982d12cc"
-					(reference "C1041")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -1414,7 +1414,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "20ce8efc-cfc4-4243-9398-154b56e6e94d")
-		(property "Reference" "C1042"
+		(property "Reference" "C39"
 			(at 107.95 96.52 0)
 			(effects
 				(font
@@ -1483,7 +1483,7 @@
 			)
 			(project "riotee-module"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a/71a24394-376e-48cc-9057-ddfdf0a39757/0e9955bb-beb0-499a-aac5-d497982d12cc"
-					(reference "C1042")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -1499,7 +1499,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b19af27-5f13-4fed-a151-7f930aeb3622")
-		(property "Reference" "C1043"
+		(property "Reference" "C40"
 			(at 180.721 57.5853 0)
 			(effects
 				(font
@@ -1568,7 +1568,7 @@
 			)
 			(project "riotee-module"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a/71a24394-376e-48cc-9057-ddfdf0a39757/0e9955bb-beb0-499a-aac5-d497982d12cc"
-					(reference "C1043")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -1584,7 +1584,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "729ad4ca-56a3-4048-99fd-004f7136edd8")
-		(property "Reference" "C1040"
+		(property "Reference" "C37"
 			(at 105.791 57.5853 0)
 			(effects
 				(font
@@ -1653,7 +1653,7 @@
 			)
 			(project "riotee-module"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a/71a24394-376e-48cc-9057-ddfdf0a39757/0e9955bb-beb0-499a-aac5-d497982d12cc"
-					(reference "C1040")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -1669,7 +1669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "874d9590-f399-48f0-9fe9-33a606edacfc")
-		(property "Reference" "#PWR01048"
+		(property "Reference" "#PWR078"
 			(at 170.18 120.65 0)
 			(effects
 				(font
@@ -1725,7 +1725,7 @@
 			)
 			(project "riotee-module"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a/71a24394-376e-48cc-9057-ddfdf0a39757/0e9955bb-beb0-499a-aac5-d497982d12cc"
-					(reference "#PWR01048")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -1741,7 +1741,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b21cf242-3731-4051-b726-8360a042d60b")
-		(property "Reference" "U1007"
+		(property "Reference" "U12"
 			(at 147.32 54.8472 0)
 			(effects
 				(font
@@ -1853,7 +1853,7 @@
 			)
 			(project "riotee-module"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a/71a24394-376e-48cc-9057-ddfdf0a39757/0e9955bb-beb0-499a-aac5-d497982d12cc"
-					(reference "U1007")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -1868,7 +1868,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf720ddf-37e2-4c01-a573-79d027b952dc")
-		(property "Reference" "Y1004"
+		(property "Reference" "Y2"
 			(at 110.9726 82.4484 90)
 			(effects
 				(font
@@ -1937,7 +1937,7 @@
 			)
 			(project "riotee-module"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a/71a24394-376e-48cc-9057-ddfdf0a39757/0e9955bb-beb0-499a-aac5-d497982d12cc"
-					(reference "Y1004")
+					(reference "Y2")
 					(unit 1)
 				)
 			)
@@ -1953,7 +1953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e23596ac-f572-4059-ab7d-cf83f25aa494")
-		(property "Reference" "#PWR01049"
+		(property "Reference" "#PWR079"
 			(at 177.8 71.12 0)
 			(effects
 				(font
@@ -2009,7 +2009,7 @@
 			)
 			(project "riotee-module"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a/71a24394-376e-48cc-9057-ddfdf0a39757/0e9955bb-beb0-499a-aac5-d497982d12cc"
-					(reference "#PWR01049")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -2025,7 +2025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e91bf497-05bb-4a6b-a08b-c6888013b207")
-		(property "Reference" "#PWR01045"
+		(property "Reference" "#PWR075"
 			(at 114.3 73.66 0)
 			(effects
 				(font
@@ -2081,7 +2081,7 @@
 			)
 			(project "riotee-module"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a/71a24394-376e-48cc-9057-ddfdf0a39757/0e9955bb-beb0-499a-aac5-d497982d12cc"
-					(reference "#PWR01045")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -2097,7 +2097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1837e9c-421e-44ed-8426-d1acc98a9e18")
-		(property "Reference" "#PWR01047"
+		(property "Reference" "#PWR077"
 			(at 124.46 120.65 0)
 			(effects
 				(font
@@ -2153,7 +2153,7 @@
 			)
 			(project "riotee-module"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a/71a24394-376e-48cc-9057-ddfdf0a39757/0e9955bb-beb0-499a-aac5-d497982d12cc"
-					(reference "#PWR01047")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -2169,7 +2169,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f85e4171-eb84-44e6-b727-735b957bb3e7")
-		(property "Reference" "#PWR01046"
+		(property "Reference" "#PWR076"
 			(at 114.3 120.65 0)
 			(effects
 				(font
@@ -2225,7 +2225,7 @@
 			)
 			(project "riotee-module"
 				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a/71a24394-376e-48cc-9057-ddfdf0a39757/0e9955bb-beb0-499a-aac5-d497982d12cc"
-					(reference "#PWR01046")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
