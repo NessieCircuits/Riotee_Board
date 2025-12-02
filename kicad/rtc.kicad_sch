@@ -1348,7 +1348,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 115.2652 62.23 0)
 			(effects
 				(font
@@ -1432,7 +1432,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 115.2652 101.6 0)
 			(effects
 				(font
@@ -1517,7 +1517,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 178.7652 62.23 0)
 			(effects
 				(font
@@ -1602,7 +1602,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 103.8352 62.23 0)
 			(effects
 				(font

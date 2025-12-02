@@ -2229,7 +2229,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 195.072 219.71 90)
 			(effects
 				(font
@@ -2520,7 +2520,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:EMI_SHIELD_CSTM"
+		(property "Footprint" "riotee:MS209-20F"
 			(at 124.46 213.36 0)
 			(effects
 				(font
@@ -2584,7 +2584,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 208.28 200.66 0)
 			(effects
 				(font

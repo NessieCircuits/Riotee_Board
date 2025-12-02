@@ -294,6 +294,168 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -401,159 +563,6 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Riotee:L"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L"
-				(at 1.905 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "L_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -909,7 +918,7 @@
 					)
 				)
 			)
-			(property "Footprint" "riotee:W121C1+2"
+			(property "Footprint" "riotee:MX_W121C1+2"
 				(at 0 20.066 0)
 				(effects
 					(font
@@ -2973,7 +2982,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 129.2352 58.42 0)
 			(effects
 				(font
@@ -3057,7 +3066,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 68.2752 85.09 0)
 			(effects
 				(font
@@ -3282,7 +3291,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 212.09 131.572 90)
 			(effects
 				(font
@@ -3438,7 +3447,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 139.3952 58.42 0)
 			(effects
 				(font
@@ -3522,7 +3531,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 55.5752 59.69 0)
 			(effects
 				(font
@@ -3819,7 +3828,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 191.4652 69.85 0)
 			(effects
 				(font
@@ -3988,7 +3997,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 202.438 74.93 90)
 			(effects
 				(font
@@ -4072,7 +4081,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 92.4052 143.51 0)
 			(effects
 				(font
@@ -4156,7 +4165,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 252.4252 67.31 0)
 			(effects
 				(font
@@ -4238,7 +4247,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 184.658 134.62 90)
 			(effects
 				(font
@@ -4415,7 +4424,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:D_0402_1005Metric"
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
 			(at 72.39 133.35 0)
 			(effects
 				(font
@@ -4544,7 +4553,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:L")
+		(lib_id "Device:L")
 		(at 238.76 55.88 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4568,7 +4577,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 238.76 55.88 0)
 			(effects
 				(font
@@ -4586,7 +4595,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FIXED IND 2.2UH 500MA 180MOHM SM"
+		(property "Description" "Inductor"
 			(at 238.76 55.88 0)
 			(effects
 				(font
@@ -4650,7 +4659,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:W121C1+2"
+		(property "Footprint" "riotee:MX_W121C1+2"
 			(at 95.25 40.894 0)
 			(effects
 				(font
@@ -4809,7 +4818,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:L")
+		(lib_id "Device:L")
 		(at 67.31 57.15 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4833,7 +4842,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:L_0805_2012Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 67.31 57.15 0)
 			(effects
 				(font
@@ -4851,7 +4860,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FIXED IND 4.7UH 600MA 180MOHM SM"
+		(property "Description" "Inductor"
 			(at 67.31 57.15 0)
 			(effects
 				(font
@@ -4988,7 +4997,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 119.0752 58.42 0)
 			(effects
 				(font
@@ -5070,7 +5079,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 83.82 131.572 90)
 			(effects
 				(font

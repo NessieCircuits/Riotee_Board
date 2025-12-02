@@ -532,7 +532,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Riotee:L"
+		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
 			)
@@ -568,7 +568,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -577,7 +577,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5473,7 +5482,7 @@
 		(uuid "e147d97b-4b38-4d36-a6ce-63db96ac49c9")
 	)
 	(symbol
-		(lib_id "Riotee:L")
+		(lib_id "Device:L")
 		(at 227.33 143.51 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5506,7 +5515,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 227.33 143.51 0)
 			(effects
 				(font
@@ -5515,7 +5524,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FIXED IND 5.6NH 350MA 400MOHM SM"
+		(property "Description" "Inductor"
 			(at 227.33 143.51 0)
 			(effects
 				(font
@@ -5650,7 +5659,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 61.2648 44.45 0)
 			(effects
 				(font
@@ -5732,7 +5741,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 237.49 54.3052 0)
 			(effects
 				(font
@@ -5904,7 +5913,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 237.49 67.0052 0)
 			(effects
 				(font
@@ -5986,7 +5995,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 240.03 23.8252 0)
 			(effects
 				(font
@@ -6212,7 +6221,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "riotee:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 21.2852 52.07 0)
 			(effects
 				(font
@@ -6376,7 +6385,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 51.1048 44.45 0)
 			(effects
 				(font
@@ -6458,7 +6467,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 254.3048 105.41 0)
 			(effects
 				(font
@@ -6734,7 +6743,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:L")
+		(lib_id "Device:L")
 		(at 242.57 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6767,7 +6776,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 242.57 148.59 0)
 			(effects
 				(font
@@ -6776,7 +6785,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FIXED IND 2.7NH 500MA 200MOHM SM"
+		(property "Description" "Inductor"
 			(at 242.57 148.59 0)
 			(effects
 				(font
@@ -6911,7 +6920,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 40.9448 44.45 0)
 			(effects
 				(font
@@ -7269,7 +7278,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:L")
+		(lib_id "Device:L")
 		(at 215.9 143.51 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7302,7 +7311,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 215.9 143.51 0)
 			(effects
 				(font
@@ -7311,7 +7320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FIXED IND 3.9NH 400MA 300MOHM SM"
+		(property "Description" "Inductor"
 			(at 215.9 143.51 0)
 			(effects
 				(font
@@ -7375,7 +7384,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 268.2748 105.41 0)
 			(effects
 				(font
@@ -7457,7 +7466,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 236.5248 105.41 0)
 			(effects
 				(font
@@ -7834,7 +7843,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 240.03 36.5252 0)
 			(effects
 				(font
@@ -7916,7 +7925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 30.7848 44.45 0)
 			(effects
 				(font
