@@ -1222,7 +1222,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "riotee:PMCM4401VPE"
+		(symbol "riotee:SI8823EDB"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1239,7 +1239,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "PMCM4401VPE"
+			(property "Value" "Si8823EDB"
 				(at 5.08 -1.27 0)
 				(effects
 					(font
@@ -1248,7 +1248,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "riotee:NXP_WLCSP4"
+			(property "Footprint" "riotee:VSH_WLCSP4"
 				(at 2.54 -15.24 0)
 				(effects
 					(font
@@ -1257,7 +1257,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMCM4401VPE.pdf"
+			(property "Datasheet" "https://www.vishay.com/docs/76852/si8823edb.pdf"
 				(at 10.16 -12.7 0)
 				(effects
 					(font
@@ -1284,7 +1284,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "PMCM4401VPE_0_1"
+			(symbol "SI8823EDB_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -1451,7 +1451,7 @@
 					)
 				)
 			)
-			(symbol "PMCM4401VPE_1_1"
+			(symbol "SI8823EDB_1_1"
 				(pin input line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1462,7 +1462,7 @@
 							)
 						)
 					)
-					(number "A1"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1480,7 +1480,7 @@
 							)
 						)
 					)
-					(number "B1"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1498,7 +1498,26 @@
 							)
 						)
 					)
-					(number "A2"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2869,7 +2888,7 @@
 		(uuid "dd35d0d2-fc94-4234-8a29-8b8ce4ee87ed")
 	)
 	(symbol
-		(lib_id "riotee:PMCM4401VPE")
+		(lib_id "riotee:SI8823EDB")
 		(at 218.44 123.19 270)
 		(mirror x)
 		(unit 1)
@@ -2887,7 +2906,7 @@
 				)
 			)
 		)
-		(property "Value" "PMCM4401VPE"
+		(property "Value" "Si8823EDB"
 			(at 218.44 116.84 90)
 			(effects
 				(font
@@ -2895,7 +2914,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:NXP_WLCSP4"
+		(property "Footprint" "riotee:VSH_WLCSP4"
 			(at 203.2 120.65 0)
 			(effects
 				(font
@@ -2904,7 +2923,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMCM4401VPE.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/76852/si8823edb.pdf"
 			(at 205.74 113.03 0)
 			(effects
 				(font
@@ -2922,7 +2941,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "PMCM4401VPEZ"
+		(property "MPN" " SI8823EDB-T2-E1"
 			(at 218.44 123.19 0)
 			(effects
 				(font
@@ -2931,14 +2950,17 @@
 				(hide yes)
 			)
 		)
-		(pin "A1"
+		(pin "2"
 			(uuid "403ae2df-17fd-48b5-bfba-ca13a372eae7")
 		)
-		(pin "A2"
+		(pin "4"
 			(uuid "39015749-eda3-4e6c-a311-7ee64571d57f")
 		)
-		(pin "B1"
+		(pin "1"
 			(uuid "a96afd13-2bf1-4f8c-903f-f398fee932e5")
+		)
+		(pin "3"
+			(uuid "c18ce99d-d8da-4840-9feb-69019c265b90")
 		)
 		(instances
 			(project "riotee-module"
@@ -3886,7 +3908,7 @@
 		)
 	)
 	(symbol
-		(lib_id "riotee:PMCM4401VPE")
+		(lib_id "riotee:SI8823EDB")
 		(at 182.88 123.19 270)
 		(mirror x)
 		(unit 1)
@@ -3904,7 +3926,7 @@
 				)
 			)
 		)
-		(property "Value" "PMCM4401VPE"
+		(property "Value" "Si8823EDB"
 			(at 182.88 116.84 90)
 			(effects
 				(font
@@ -3912,7 +3934,7 @@
 				)
 			)
 		)
-		(property "Footprint" "riotee:NXP_WLCSP4"
+		(property "Footprint" "riotee:VSH_WLCSP4"
 			(at 167.64 120.65 0)
 			(effects
 				(font
@@ -3921,7 +3943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMCM4401VPE.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/76852/si8823edb.pdf"
 			(at 170.18 113.03 0)
 			(effects
 				(font
@@ -3939,7 +3961,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "PMCM4401VPEZ"
+		(property "MPN" " SI8823EDB-T2-E1"
 			(at 182.88 123.19 0)
 			(effects
 				(font
@@ -3948,14 +3970,17 @@
 				(hide yes)
 			)
 		)
-		(pin "A1"
+		(pin "1"
 			(uuid "dfc87fd2-469c-4c4c-b92c-cb67a8525344")
 		)
-		(pin "A2"
+		(pin "4"
 			(uuid "2f519d59-95cc-4a25-8fea-07935b2cf6c9")
 		)
-		(pin "B1"
+		(pin "3"
 			(uuid "14a89aae-2e93-4306-9360-0739fdf9d921")
+		)
+		(pin "2"
+			(uuid "bb7cde3c-033a-4c97-830f-97f29cb17cff")
 		)
 		(instances
 			(project "riotee-module"
