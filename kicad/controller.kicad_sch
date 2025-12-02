@@ -561,6 +561,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -5043,7 +5052,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LED GREEN CLEAR 0402 SMD"
+		(property "Description" "Light emitting diode"
 			(at 246.38 52.07 0)
 			(effects
 				(font
@@ -5053,6 +5062,15 @@
 			)
 		)
 		(property "MPN" "QBLP595-AG1"
+			(at 246.38 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 246.38 52.07 0)
 			(effects
 				(font

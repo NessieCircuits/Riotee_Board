@@ -220,6 +220,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Crystal"
 			(pin_numbers
 				(hide yes)
@@ -383,225 +522,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Riotee:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Riotee:GND"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -878,6 +798,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "riotee:ECS-320-8-47B-7KM-TR"
 			(pin_names
 				(offset 1.016)
@@ -904,7 +925,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Riotee:ECS_ECX-1247B"
+			(property "Footprint" "riotee:ECS_ECX-1247B"
 				(at 2.54 -12.7 0)
 				(effects
 					(font
@@ -1157,7 +1178,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Riotee:NRF52833-CJAA"
+			(property "Footprint" "riotee:NRF52833-CJAA"
 				(at 0.635 63.5 0)
 				(effects
 					(font
@@ -5476,7 +5497,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:RFSMD_0201_0603Metric"
+		(property "Footprint" "riotee:RFSMD_0201_0603Metric"
 			(at 227.33 143.51 0)
 			(effects
 				(font
@@ -5534,7 +5555,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:GND")
+		(lib_id "power:GND")
 		(at 255.27 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5577,7 +5598,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 255.27 71.12 0)
 			(effects
 				(font
@@ -5605,7 +5626,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 62.23 48.26 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5629,7 +5650,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:C_0201_0603Metric"
+		(property "Footprint" "riotee:C_0201_0603Metric"
 			(at 61.2648 44.45 0)
 			(effects
 				(font
@@ -5647,7 +5668,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.1UF 10V X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 62.23 48.26 0)
 			(effects
 				(font
@@ -5687,7 +5708,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 241.3 53.34 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5711,7 +5732,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:C_0201_0603Metric"
+		(property "Footprint" "riotee:C_0201_0603Metric"
 			(at 237.49 54.3052 0)
 			(effects
 				(font
@@ -5729,7 +5750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 12PF 50V C0G/NP0 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 241.3 53.34 0)
 			(effects
 				(font
@@ -5795,7 +5816,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Riotee:ECS_ECX-1247B"
+		(property "Footprint" "riotee:ECS_ECX-1247B"
 			(at 242.57 62.23 0)
 			(effects
 				(font
@@ -5859,7 +5880,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 241.3 66.04 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5883,7 +5904,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:C_0201_0603Metric"
+		(property "Footprint" "riotee:C_0201_0603Metric"
 			(at 237.49 67.0052 0)
 			(effects
 				(font
@@ -5901,7 +5922,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 12PF 50V C0G/NP0 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 241.3 66.04 0)
 			(effects
 				(font
@@ -5941,7 +5962,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 243.84 22.86 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5965,7 +5986,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:C_0201_0603Metric"
+		(property "Footprint" "riotee:C_0201_0603Metric"
 			(at 240.03 23.8252 0)
 			(effects
 				(font
@@ -5983,7 +6004,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 12PF 50V C0G/NP0 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 243.84 22.86 0)
 			(effects
 				(font
@@ -6023,7 +6044,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:GND")
+		(lib_id "power:GND")
 		(at 242.57 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6066,7 +6087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 242.57 153.67 0)
 			(effects
 				(font
@@ -6094,7 +6115,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:GND")
+		(lib_id "power:GND")
 		(at 20.32 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6137,7 +6158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 20.32 57.15 0)
 			(effects
 				(font
@@ -6165,7 +6186,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 20.32 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6191,7 +6212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Riotee:C_0402_1005Metric"
+		(property "Footprint" "riotee:C_0402_1005Metric"
 			(at 21.2852 52.07 0)
 			(effects
 				(font
@@ -6209,7 +6230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 4.7UF 10V X5R 0402"
+		(property "Description" "Unpolarized capacitor"
 			(at 20.32 48.26 0)
 			(effects
 				(font
@@ -6249,7 +6270,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 222.25 148.59 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6273,7 +6294,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:RFSMD_0201_0603Metric"
+		(property "Footprint" "riotee:RFSMD_0201_0603Metric"
 			(at 221.2848 144.78 0)
 			(effects
 				(font
@@ -6291,7 +6312,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.8p 50V C0G/NP0 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 222.25 148.59 0)
 			(effects
 				(font
@@ -6331,7 +6352,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 52.07 48.26 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6355,7 +6376,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:C_0201_0603Metric"
+		(property "Footprint" "riotee:C_0201_0603Metric"
 			(at 51.1048 44.45 0)
 			(effects
 				(font
@@ -6373,7 +6394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 1UF 16V X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 52.07 48.26 0)
 			(effects
 				(font
@@ -6413,7 +6434,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 255.27 109.22 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6437,7 +6458,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:C_0201_0603Metric"
+		(property "Footprint" "riotee:C_0201_0603Metric"
 			(at 254.3048 105.41 0)
 			(effects
 				(font
@@ -6455,7 +6476,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.1UF 10V X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 255.27 109.22 0)
 			(effects
 				(font
@@ -6522,7 +6543,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Riotee:Texas_SWRA117D_2.4GHz_Left"
+		(property "Footprint" "riotee:Texas_SWRA117D_2.4GHz_Left"
 			(at 262.89 135.255 0)
 			(effects
 				(font
@@ -6571,7 +6592,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:GND")
+		(lib_id "power:GND")
 		(at 163.83 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6614,7 +6635,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 163.83 30.48 0)
 			(effects
 				(font
@@ -6642,7 +6663,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:GND")
+		(lib_id "power:GND")
 		(at 257.81 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6685,7 +6706,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 257.81 153.67 0)
 			(effects
 				(font
@@ -6737,7 +6758,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:RFSMD_0201_0603Metric"
+		(property "Footprint" "riotee:RFSMD_0201_0603Metric"
 			(at 242.57 148.59 0)
 			(effects
 				(font
@@ -6795,7 +6816,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:GND")
+		(lib_id "power:GND")
 		(at 222.25 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6838,7 +6859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 222.25 153.67 0)
 			(effects
 				(font
@@ -6866,7 +6887,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 41.91 48.26 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6890,7 +6911,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:C_0201_0603Metric"
+		(property "Footprint" "riotee:C_0201_0603Metric"
 			(at 40.9448 44.45 0)
 			(effects
 				(font
@@ -6908,7 +6929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.1UF 10V X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 41.91 48.26 0)
 			(effects
 				(font
@@ -6972,7 +6993,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:NRF52833-CJAA"
+		(property "Footprint" "riotee:NRF52833-CJAA"
 			(at 120.015 22.86 0)
 			(effects
 				(font
@@ -7272,7 +7293,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:RFSMD_0201_0603Metric"
+		(property "Footprint" "riotee:RFSMD_0201_0603Metric"
 			(at 215.9 143.51 0)
 			(effects
 				(font
@@ -7330,7 +7351,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 269.24 109.22 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7354,7 +7375,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:C_0201_0603Metric"
+		(property "Footprint" "riotee:C_0201_0603Metric"
 			(at 268.2748 105.41 0)
 			(effects
 				(font
@@ -7372,7 +7393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 820PF 50V C0G/NP0 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 269.24 109.22 0)
 			(effects
 				(font
@@ -7412,7 +7433,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 237.49 109.22 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7436,7 +7457,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:C_0201_0603Metric"
+		(property "Footprint" "riotee:C_0201_0603Metric"
 			(at 236.5248 105.41 0)
 			(effects
 				(font
@@ -7454,7 +7475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 1UF 16V X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 237.49 109.22 0)
 			(effects
 				(font
@@ -7494,7 +7515,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:GND")
+		(lib_id "power:GND")
 		(at 78.74 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7537,7 +7558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 78.74 147.32 0)
 			(effects
 				(font
@@ -7565,7 +7586,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:GND")
+		(lib_id "power:GND")
 		(at 231.14 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7608,7 +7629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 231.14 71.12 0)
 			(effects
 				(font
@@ -7636,7 +7657,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 250.19 143.51 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7660,7 +7681,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:RFSMD_0201_0603Metric"
+		(property "Footprint" "riotee:RFSMD_0201_0603Metric"
 			(at 254 142.5448 0)
 			(effects
 				(font
@@ -7678,7 +7699,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.7PF 50V C0G/NP0 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 250.19 143.51 0)
 			(effects
 				(font
@@ -7718,7 +7739,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:GND")
+		(lib_id "power:GND")
 		(at 267.97 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7761,7 +7782,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 267.97 153.67 0)
 			(effects
 				(font
@@ -7789,7 +7810,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 243.84 35.56 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7813,7 +7834,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:C_0201_0603Metric"
+		(property "Footprint" "riotee:C_0201_0603Metric"
 			(at 240.03 36.5252 0)
 			(effects
 				(font
@@ -7831,7 +7852,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 12PF 50V C0G/NP0 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 243.84 35.56 0)
 			(effects
 				(font
@@ -7871,7 +7892,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 31.75 48.26 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7895,7 +7916,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:C_0201_0603Metric"
+		(property "Footprint" "riotee:C_0201_0603Metric"
 			(at 30.7848 44.45 0)
 			(effects
 				(font
@@ -7913,7 +7934,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.1UF 10V X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 31.75 48.26 0)
 			(effects
 				(font
@@ -7953,7 +7974,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:GND")
+		(lib_id "power:GND")
 		(at 233.68 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7996,7 +8017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 233.68 39.37 0)
 			(effects
 				(font
@@ -8024,7 +8045,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:GND")
+		(lib_id "power:GND")
 		(at 247.65 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8067,7 +8088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 247.65 120.65 0)
 			(effects
 				(font
@@ -8166,7 +8187,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:C")
+		(lib_id "Device:C")
 		(at 257.81 148.59 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8190,7 +8211,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Riotee:RFSMD_0201_0603Metric"
+		(property "Footprint" "riotee:RFSMD_0201_0603Metric"
 			(at 256.8448 144.78 0)
 			(effects
 				(font
@@ -8208,7 +8229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 257.81 148.59 0)
 			(effects
 				(font
@@ -8265,7 +8286,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Riotee:ECX-12R"
+		(property "Footprint" "riotee:ECX-12R"
 			(at 256.54 29.21 0)
 			(effects
 				(font

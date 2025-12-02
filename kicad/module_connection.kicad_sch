@@ -1146,6 +1146,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -3212,6 +3221,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 113.03) (xy 77.47 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fdc4ca6-bd82-4875-b5ab-5917e03760b1")
+	)
+	(wire
+		(pts
 			(xy 124.46 36.83) (xy 124.46 40.64)
 		)
 		(stroke
@@ -3272,16 +3291,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 95.25) (xy 212.09 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29a07a1e-f643-4a39-a262-0518e820e0c5")
-	)
-	(wire
-		(pts
 			(xy 110.49 113.03) (xy 107.95 113.03)
 		)
 		(stroke
@@ -3312,7 +3321,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 125.73) (xy 110.49 125.73)
+			(xy 99.06 125.73) (xy 110.49 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3332,23 +3341,13 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 130.81) (xy 110.49 130.81)
+			(xy 99.06 130.81) (xy 110.49 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4022e835-32e3-4536-954d-8574372abfae")
-	)
-	(wire
-		(pts
-			(xy 269.24 34.29) (xy 269.24 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "411c2931-5458-47e2-9a02-550d8ce7039f")
 	)
 	(wire
 		(pts
@@ -3359,6 +3358,16 @@
 			(type default)
 		)
 		(uuid "421cd8a4-309e-41c7-abc7-3c2d4b39f0e2")
+	)
+	(bus
+		(pts
+			(xy 191.77 92.71) (xy 212.09 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "423c12ab-868a-410b-8a8f-8e2bd4f97950")
 	)
 	(wire
 		(pts
@@ -3382,7 +3391,17 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 118.11) (xy 110.49 118.11)
+			(xy 102.87 107.95) (xy 102.87 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49640bb2-e44f-422f-aa6c-e7beed17fab7")
+	)
+	(wire
+		(pts
+			(xy 99.06 118.11) (xy 110.49 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3409,6 +3428,16 @@
 			(type default)
 		)
 		(uuid "4ef3b215-df57-491f-85cd-34b6887345a5")
+	)
+	(bus
+		(pts
+			(xy 191.77 95.25) (xy 212.09 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f78421c-98f4-4826-a8a7-16017754a8ea")
 	)
 	(wire
 		(pts
@@ -3492,7 +3521,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 115.57) (xy 110.49 115.57)
+			(xy 99.06 115.57) (xy 110.49 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3522,7 +3551,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 135.89) (xy 110.49 135.89)
+			(xy 99.06 135.89) (xy 110.49 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3562,7 +3591,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 128.27) (xy 110.49 128.27)
+			(xy 99.06 128.27) (xy 110.49 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3652,16 +3681,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 92.71) (xy 212.09 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad2dc0c4-43aa-45d9-b5f9-78bbf039a60f")
-	)
-	(wire
-		(pts
 			(xy 149.86 118.11) (xy 156.21 118.11)
 		)
 		(stroke
@@ -3722,7 +3741,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 133.35) (xy 110.49 133.35)
+			(xy 99.06 133.35) (xy 110.49 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3742,7 +3761,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 120.65) (xy 110.49 120.65)
+			(xy 99.06 120.65) (xy 110.49 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3782,7 +3801,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 118.11) (xy 71.12 118.11)
+			(xy 64.77 118.11) (xy 77.47 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3910,7 +3929,7 @@
 		)
 		(uuid "11a86b6a-ad12-49a7-bc1f-ca27dd6d302f")
 	)
-	(label "A0"
+	(label "D2"
 		(at 149.86 130.81 180)
 		(effects
 			(font
@@ -3921,7 +3940,7 @@
 		(uuid "131d318a-c964-41e9-82b5-3d81645ab7fe")
 	)
 	(label "Vbuck"
-		(at 102.87 125.73 180)
+		(at 99.06 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3929,16 +3948,6 @@
 			(justify right bottom)
 		)
 		(uuid "1777cdf8-2602-4b07-b92e-851d2aab0938")
-	)
-	(label "TargetVcc"
-		(at 269.24 40.64 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1a4f7abc-17ad-4ce0-85ce-9234b258e8bf")
 	)
 	(label "D6"
 		(at 119.38 52.07 180)
@@ -3960,7 +3969,7 @@
 		)
 		(uuid "3668d10d-fc5f-4b07-91e6-d411367b4c84")
 	)
-	(label "A1"
+	(label "D3"
 		(at 149.86 128.27 180)
 		(effects
 			(font
@@ -4001,7 +4010,7 @@
 		(uuid "52a55ebf-9b57-4f90-9d16-2bd9adb2b43e")
 	)
 	(label "D10"
-		(at 102.87 135.89 180)
+		(at 99.06 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4011,7 +4020,7 @@
 		(uuid "558b9cde-360b-44f2-8d62-58103c92f7b0")
 	)
 	(label "D9"
-		(at 102.87 133.35 180)
+		(at 99.06 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4040,18 +4049,8 @@
 		)
 		(uuid "77fe36fe-303a-4d8c-98e2-171ab189d4de")
 	)
-	(label "TargetVcc"
-		(at 102.87 123.19 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "791020a8-db0d-49ce-9df7-23c980d5fe8f")
-	)
 	(label "Vcap"
-		(at 102.87 118.11 180)
+		(at 99.06 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4081,7 +4080,7 @@
 		(uuid "ac56ea87-e7fa-41f4-9533-88051db15ca1")
 	)
 	(label "VcapSense"
-		(at 102.87 120.65 180)
+		(at 99.06 120.65 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4089,16 +4088,6 @@
 			(justify right bottom)
 		)
 		(uuid "c0d7bb97-abb3-415a-8211-53831805d67b")
-	)
-	(label "TargetVcc"
-		(at 124.46 36.83 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c9455db0-2e1c-445f-8118-e75412ea61e0")
 	)
 	(label "Vcap"
 		(at 265.43 81.28 180)
@@ -4111,7 +4100,7 @@
 		(uuid "cc70148a-79b0-4316-9d52-f7a1f2f139c0")
 	)
 	(label "Vharvester"
-		(at 102.87 115.57 180)
+		(at 99.06 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4131,7 +4120,7 @@
 		(uuid "de9b7465-6f6c-4d85-9dbe-30b95f1cbb13")
 	)
 	(label "D8"
-		(at 102.87 130.81 180)
+		(at 99.06 130.81 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4139,16 +4128,6 @@
 			(justify right bottom)
 		)
 		(uuid "e03e954e-10c6-4d12-8329-01553b1fb335")
-	)
-	(label "TargetVcc"
-		(at 71.12 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e3345526-bd6d-4917-a388-af8b85c5da6e")
 	)
 	(label "Vharvester"
 		(at 215.9 130.81 180)
@@ -4161,7 +4140,7 @@
 		(uuid "e7913631-02c4-43d5-a648-b00fe921e2dd")
 	)
 	(label "D7"
-		(at 102.87 128.27 180)
+		(at 99.06 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4267,6 +4246,71 @@
 			(justify right)
 		)
 		(uuid "e4911348-1d36-40d6-ae36-21dd3be9c186")
+	)
+	(symbol
+		(lib_id "Riotee:VCC")
+		(at 124.46 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05eb68c7-1d98-4795-88c2-23073ee4cee8")
+		(property "Reference" "#PWR0116"
+			(at 124.46 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 124.841 32.4358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5a8c08f-c45a-4098-89c9-5d537ded4936")
+		)
+		(instances
+			(project "riotee-board"
+				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a"
+					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -5251,6 +5295,71 @@
 		)
 	)
 	(symbol
+		(lib_id "Riotee:VCC")
+		(at 77.47 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "57fe7440-efca-4226-b9d5-96443fd66ce1")
+		(property "Reference" "#PWR074"
+			(at 77.47 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 77.851 108.6358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 77.47 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b25a2686-f202-4d1e-8d23-a5ea3a0975b7")
+		)
+		(instances
+			(project "riotee-board"
+				(path "/e235c9a3-080d-42b7-93df-883e69095a9f/1e27cf53-0710-4019-b3d0-1fa374a39b5a"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 226.06 130.81 0)
 		(unit 1)
@@ -5705,7 +5814,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LED GREEN CLEAR 0402 SMD"
+		(property "Description" "Light emitting diode"
 			(at 78.74 44.45 0)
 			(effects
 				(font
@@ -5715,6 +5824,15 @@
 			)
 		)
 		(property "MPN" "QBLP595-AG1"
+			(at 78.74 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 78.74 44.45 0)
 			(effects
 				(font
@@ -5740,7 +5858,7 @@
 	)
 	(symbol
 		(lib_id "Riotee:VCC")
-		(at 269.24 34.29 0)
+		(at 102.87 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5748,7 +5866,7 @@
 		(dnp no)
 		(uuid "a51fe4f1-eaa2-4018-ae6b-1f22d87ac965")
 		(property "Reference" "#PWR0115"
-			(at 269.24 38.1 0)
+			(at 102.87 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5757,7 +5875,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 269.621 29.8958 0)
+			(at 103.251 103.5558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5765,7 +5883,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 269.24 34.29 0)
+			(at 102.87 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5774,7 +5892,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.24 34.29 0)
+			(at 102.87 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5783,7 +5901,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 269.24 34.29 0)
+			(at 102.87 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
