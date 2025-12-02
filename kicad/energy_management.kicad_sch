@@ -339,7 +339,120 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Riotee:TLV369DCK"
+		(symbol "Riotee:VCC"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VCC"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "riotee:TLV369DCK"
 			(pin_names
 				(offset 0.127)
 			)
@@ -517,7 +630,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Riotee:TLV7032"
+		(symbol "riotee:TLV7032"
 			(pin_names
 				(offset 0.127)
 			)
@@ -778,119 +891,6 @@
 						)
 					)
 					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Riotee:VCC"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2948,7 +2948,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:TLV7032")
+		(lib_id "riotee:TLV7032")
 		(at 217.17 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2990,7 +2990,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual comparator, Iq=315nA/Ch"
+		(property "Description" "Dual, 1.8V Low Power, Rail-to-Rail Input, Push-Pull Output Comparator, DSBGA-8"
 			(at 217.17 96.52 0)
 			(effects
 				(font
@@ -3217,7 +3217,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:TLV7032")
+		(lib_id "riotee:TLV7032")
 		(at 226.06 114.3 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -4020,7 +4020,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:TLV7032")
+		(lib_id "riotee:TLV7032")
 		(at 217.17 96.52 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -4066,7 +4066,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual comparator, Iq=315nA/Ch"
+		(property "Description" "Dual, 1.8V Low Power, Rail-to-Rail Input, Push-Pull Output Comparator, DSBGA-8"
 			(at 217.17 96.52 0)
 			(effects
 				(font
@@ -4437,7 +4437,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Riotee:TLV369DCK")
+		(lib_id "riotee:TLV369DCK")
 		(at 74.93 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4472,7 +4472,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm321.pdf"
 			(at 74.93 64.77 0)
 			(effects
 				(font
@@ -4481,7 +4481,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Op-Amp, Iq=800nA"
+		(property "Description" "Low Power Single Operational Amplifier, SOT-23-5"
 			(at 74.93 64.77 0)
 			(effects
 				(font
