@@ -23124,6 +23124,7 @@
 		(property "Value" "Si8823EDB"
 			(at 0 1.5 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "6a2bd04c-c325-4015-9b72-bfa02f37eb93")
 			(effects
 				(font
@@ -32442,7 +32443,87 @@
 			)
 			(fill no)
 			(layer "Dwgs.User")
-			(uuid "123448bf-a03e-43ae-88e6-fc2e2d875d91")
+			(uuid "ebf51596-44b8-4abe-a211-4996ace13a5d")
+		)
+		(fp_line
+			(start 8.4 -11.2)
+			(end 8.4 10.3)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "de9c2649-1f4a-48c6-a061-3c5b68ebf58c")
+		)
+		(fp_line
+			(start -8.4 -11.2)
+			(end 8.4 -11.2)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "e8b235ff-0f68-4b42-aee0-f2b4f8dbf256")
+		)
+		(fp_line
+			(start 6.7 -9.5)
+			(end -6.7 -9.5)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "83ed791e-2986-492f-b57a-f0530813d816")
+		)
+		(fp_line
+			(start -6.7 -9.5)
+			(end -6.7 10.3)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "340b4f9c-0d4d-4691-804c-b6ef06ffbcc8")
+		)
+		(fp_line
+			(start 8.4 10.3)
+			(end 6.7 10.3)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "d5eba0a7-e282-4fe6-8e61-1d972b7a0c6f")
+		)
+		(fp_line
+			(start 6.7 10.3)
+			(end 6.7 -9.5)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "a20f7af0-ee87-4401-abbe-94f6bb5c80d5")
+		)
+		(fp_line
+			(start -6.7 10.3)
+			(end -8.4 10.3)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "1d1abd08-cfe9-4ea5-851b-3383b4025bbe")
+		)
+		(fp_line
+			(start -8.4 10.3)
+			(end -8.4 -11.2)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "c7c5f29b-c8d5-4eac-9223-8b097c23cd75")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 90)
@@ -32491,6 +32572,17 @@
 			(uuid "48f90f93-2e23-4775-98b1-6153ea75fa91")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../library/riotee.3dshapes/EMI_SHIELD.step"
+			(offset
+				(xyz 0 0.1 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 90)
+			)
+		)
 	)
 	(footprint "riotee:TI_DBV0005A"
 		(layer "F.Cu")
@@ -36380,6 +36472,7 @@
 		(property "Value" "Si8823EDB"
 			(at 0 1.5 270)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "825108f1-8bc9-460a-8e7f-1cdf937a8ee0")
 			(effects
 				(font
