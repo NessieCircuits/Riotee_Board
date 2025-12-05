@@ -112,7 +112,7 @@
 			(usegerberextensions no)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
-			(creategerberjobfile yes)
+			(creategerberjobfile no)
 			(dashed_line_dash_ratio 12.000000)
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 6)
@@ -32396,6 +32396,7 @@
 			(at 0 1 90)
 			(unlocked yes)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "e2aa0b61-a92d-4d55-8005-7f81f103de44")
 			(effects
 				(font
@@ -32901,6 +32902,7 @@
 		(property "Value" "220k"
 			(at 0 1.05 180)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "83d41aeb-4d92-4a45-9b3d-1af26df69fa6")
 			(effects
 				(font
