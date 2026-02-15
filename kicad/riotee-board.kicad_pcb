@@ -6386,7 +6386,7 @@
 				)
 			)
 		)
-		(property "MPN" "PMCM4401VNEAZ"
+		(property "MPN" "PMCM4401UNEZ"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24223,14 +24223,14 @@
 			(at -2.88 -2.37 270)
 			(size 0.75 0.75)
 			(drill 0.65)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "4277f604-7ca3-4e82-b851-113a501a3ec3")
 		)
 		(pad "" np_thru_hole circle
 			(at 2.9 -2.37 270)
 			(size 0.75 0.75)
 			(drill 0.65)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "059bb949-5819-445f-9cec-f14e388d4606")
 		)
 		(pad "A1/B12" smd rect
@@ -32574,6 +32574,7 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/../library/riotee.3dshapes/EMI_SHIELD.step"
+			(hide yes)
 			(offset
 				(xyz 0 0.1 0)
 			)
